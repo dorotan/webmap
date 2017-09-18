@@ -15,7 +15,7 @@
     <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
     <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
     
-            <style> #map_a21f38f66f5245d0ab9360ee4a3d87d7 {
+            <style> #map_8bb66e76aa254ccb9a1d1ff46366c3d4 {
                 position : relative;
                 width : 100.0%;
                 height: 100.0%;
@@ -27,7 +27,7 @@
 </head>
 <body>    
     
-            <div class="folium-map" id="map_a21f38f66f5245d0ab9360ee4a3d87d7" ></div>
+            <div class="folium-map" id="map_8bb66e76aa254ccb9a1d1ff46366c3d4" ></div>
         
 </body>
 <script>    
@@ -37,8 +37,8 @@
                 var bounds = null;
             
 
-            var map_a21f38f66f5245d0ab9360ee4a3d87d7 = L.map(
-                                  'map_a21f38f66f5245d0ab9360ee4a3d87d7',
+            var map_8bb66e76aa254ccb9a1d1ff46366c3d4 = L.map(
+                                  'map_8bb66e76aa254ccb9a1d1ff46366c3d4',
                                   {center: [52,20],
                                   zoom: 6,
                                   maxBounds: bounds,
@@ -49,8 +49,8 @@
             
         
     
-            var tile_layer_913b5f25a4404e7aacfe9a44970ea9f6 = L.tileLayer(
-                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+            var tile_layer_1caa60dc995f4499b56168b9e7a66c6d = L.tileLayer(
+                'https://{s}.tiles.mapbox.com/v3/mapbox.world-bright/{z}/{x}/{y}.png',
                 {
   "attribution": null,
   "detectRetina": false,
@@ -59,6 +59,175 @@
   "noWrap": false,
   "subdomains": "abc"
 }
-                ).addTo(map_a21f38f66f5245d0ab9360ee4a3d87d7);
+                ).addTo(map_8bb66e76aa254ccb9a1d1ff46366c3d4);
+        
+    
+            var feature_group_cce3dcd266f343cab065f776d5608e44 = L.featureGroup(
+                ).addTo(map_8bb66e76aa254ccb9a1d1ff46366c3d4);
+        
+    
+
+            var marker_a293af75f97b46b68102051b460bbba4 = L.marker(
+                [50.4166667,17.9666667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cce3dcd266f343cab065f776d5608e44);
+            
+    
+
+                var icon_166e325973f2471e81b5865aff6164a1 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a293af75f97b46b68102051b460bbba4.setIcon(icon_166e325973f2471e81b5865aff6164a1);
+            
+    
+            var popup_cbddc44bf20646d0be2a4e3b5c880fc3 = L.popup({maxWidth: '300'});
+
+            
+                var html_4ecfb8fa3f4a428ea748d93f6b381114 = $('<div id="html_4ecfb8fa3f4a428ea748d93f6b381114" style="width: 100.0%; height: 100.0%;">To jest tooltip</div>')[0];
+                popup_cbddc44bf20646d0be2a4e3b5c880fc3.setContent(html_4ecfb8fa3f4a428ea748d93f6b381114);
+            
+
+            marker_a293af75f97b46b68102051b460bbba4.bindPopup(popup_cbddc44bf20646d0be2a4e3b5c880fc3);
+
+            
+        
+    
+
+            var marker_6a205e6924e148e5bfd4d5694b83480c = L.marker(
+                [52.4166667,18.9666667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cce3dcd266f343cab065f776d5608e44);
+            
+    
+
+                var icon_6b6f877aa02345a39e380ecacbad0acc = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'pink',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_6a205e6924e148e5bfd4d5694b83480c.setIcon(icon_6b6f877aa02345a39e380ecacbad0acc);
+            
+    
+            var popup_5aa859bbe10641a2bceea89e1f935d88 = L.popup({maxWidth: '300'});
+
+            
+                var html_639d884f71534f81abd3220e0ebe2874 = $('<div id="html_639d884f71534f81abd3220e0ebe2874" style="width: 100.0%; height: 100.0%;">To jest tooltip</div>')[0];
+                popup_5aa859bbe10641a2bceea89e1f935d88.setContent(html_639d884f71534f81abd3220e0ebe2874);
+            
+
+            marker_6a205e6924e148e5bfd4d5694b83480c.bindPopup(popup_5aa859bbe10641a2bceea89e1f935d88);
+
+            
+        
+    
+
+            var marker_1ac5e8d1551346e0b38d203dc5fae27c = L.marker(
+                [52.4166667,16.9666667],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cce3dcd266f343cab065f776d5608e44);
+            
+    
+
+                var icon_2d19b8f5d638464c99f98467ea5a257f = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_1ac5e8d1551346e0b38d203dc5fae27c.setIcon(icon_2d19b8f5d638464c99f98467ea5a257f);
+            
+    
+            var popup_33112391c7d741e2a4644a150c49246a = L.popup({maxWidth: '300'});
+
+            
+                var html_d4f50aeddca646588fd0c006ea07899b = $('<div id="html_d4f50aeddca646588fd0c006ea07899b" style="width: 100.0%; height: 100.0%;">Poznań to miasto na prawach powiatu w zachodniej Polsce, położone nad rzeką Wartą, u ujścia Cybiny.</div>')[0];
+                popup_33112391c7d741e2a4644a150c49246a.setContent(html_d4f50aeddca646588fd0c006ea07899b);
+            
+
+            marker_1ac5e8d1551346e0b38d203dc5fae27c.bindPopup(popup_33112391c7d741e2a4644a150c49246a);
+
+            
+        
+    
+
+            var marker_064ddf52270f407eb0bf1b21a9969118 = L.marker(
+                [52.22977,21.01178],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cce3dcd266f343cab065f776d5608e44);
+            
+    
+
+                var icon_0a1f1a640f5346ad94a22eda25472466 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_064ddf52270f407eb0bf1b21a9969118.setIcon(icon_0a1f1a640f5346ad94a22eda25472466);
+            
+    
+            var popup_bdfc8e10f61149e396ba3d0f879049cf = L.popup({maxWidth: '300'});
+
+            
+                var html_03d6c80447334908b4bb2f51603f651c = $('<div id="html_03d6c80447334908b4bb2f51603f651c" style="width: 100.0%; height: 100.0%;">Warszawa - stolica Polski i województwa mazowieckiego, największe miasto kraju, położone nad Wisłą.</div>')[0];
+                popup_bdfc8e10f61149e396ba3d0f879049cf.setContent(html_03d6c80447334908b4bb2f51603f651c);
+            
+
+            marker_064ddf52270f407eb0bf1b21a9969118.bindPopup(popup_bdfc8e10f61149e396ba3d0f879049cf);
+
+            
+        
+    
+
+            var marker_52f02541fcea4c19b6c025d5e218aa09 = L.marker(
+                [51.1,17.03333],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(feature_group_cce3dcd266f343cab065f776d5608e44);
+            
+    
+
+                var icon_26d0c0e0e94b4828b47cd34b4c99e7c8 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_52f02541fcea4c19b6c025d5e218aa09.setIcon(icon_26d0c0e0e94b4828b47cd34b4c99e7c8);
+            
+    
+            var popup_ab23b7f0746b4a2094bf26e045976b34 = L.popup({maxWidth: '300'});
+
+            
+                var html_c8a0b9ad30fe4a5392460822e5eebcb6 = $('<div id="html_c8a0b9ad30fe4a5392460822e5eebcb6" style="width: 100.0%; height: 100.0%;">Wrocław to miasto na prawach powiatu, położone w południowo-zachodniej Polsce, siedziba władz województwa dolnośląskiego i powiatu wrocławskiego.</div>')[0];
+                popup_ab23b7f0746b4a2094bf26e045976b34.setContent(html_c8a0b9ad30fe4a5392460822e5eebcb6);
+            
+
+            marker_52f02541fcea4c19b6c025d5e218aa09.bindPopup(popup_ab23b7f0746b4a2094bf26e045976b34);
+
+            
         
 </script>
