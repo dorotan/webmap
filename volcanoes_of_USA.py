@@ -24,16 +24,19 @@ fg=folium.FeatureGroup(name="My Map")
 
 # using "for" loop to create a new marker on the map of USA
 for lat, lon, elev in zip(lat, lon, elev):
-    fg.add_child(folium.CircleMarker(location=[lat, lon], radius=6, popup=str(elev)+" metres",
-                                     fill_color=color_producer(elev), color='grey', fill=True, fill_opacity=0.7))
+    fg.add_child(folium.CircleMarker(location=[lat, lon],
+                                     radius=6,
+                                     popup=str(elev)+" metres",
+                                     fill_color=color_producer(elev),
+                                     color="grey",
+                                     fill=True,
+                                     fill_opacity=0.7))
 
 
-fg.add_child(folium.GeoJson(data=(open('world.json', 'r', encoding='utf-8-sig').read())))
-
-
+# fg.add_child(folium.GeoJson(data=open(file="world.json", mode="r", encoding="utf-8-sig"),
+# style_function=lambda x: {"fillColor":"yellow"}))
 
 map.add_child(fg)
-
 
 # saving my map
 map.save("Volcanoesmap.html")
